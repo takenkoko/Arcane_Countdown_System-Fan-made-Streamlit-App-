@@ -21,3 +21,9 @@ https://arcane-countdown-system.streamlit.app/
 
 # Author 
 Takenokoko
+
+## Disclaimer
+
+This is a fan-made project created for educational and non-commercial purposes.
+
+All copyrights, trademarks, and related rights belong to their respective owners, including Gryphline.
