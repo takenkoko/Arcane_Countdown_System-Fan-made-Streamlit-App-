@@ -16,7 +16,7 @@ def set_background(image_file):
         f"""
         <style>
         .stApp{{
-           background-image:url("data:image/jpg;base64,{data}");
+           background-image:url("data:image/jpeg;base64,{data}");
            background-size: cover;   
            background-position: center;
            background-attachment:fixed;
@@ -28,7 +28,7 @@ def set_background(image_file):
         """,
         unsafe_allow_html=True
     )
-if os.path.exists("images/Arcane_Coundown_Kaba-2.jpg"):
+if os.path.exists("images/Arcane_Countdown_Kaba-2.jpg"):
     set_background("images/Arcane_Coundown_Kaba-2.jpg")
 
 #=============================
