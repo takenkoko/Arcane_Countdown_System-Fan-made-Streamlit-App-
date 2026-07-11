@@ -37,7 +37,7 @@ if os.path.exists("images/Arcane_Coundown_Kaba-2.jpg"):
 left, right = st.columns([1,2])
 
 with right:
-    st.title("🚀Arcane Coundown System")
+    st.title("🚀Arcane Countdown System")
     st.subheader("Synchronizing with July 16, 2026...")
     
     release_date = date(2026,7,16)
@@ -86,3 +86,20 @@ with right:
     
         if st.button("EXIT"):
             st.rerun()
+        
+    st.markdown(
+        """
+         <div style="
+         display:flex;
+         justify-content:center;
+         align-items:center;
+         text-align:center; 
+         color:gray; 
+         font-size:12px;">
+         This is a fan-made project created for educational and non-commercial purposes.<br>
+         All copyrights, trademarks, and related rights belong to their respective owners, including Gryphline.
+        </div>
+        """,
+        unsafe_allow_html=True
+        )
+
