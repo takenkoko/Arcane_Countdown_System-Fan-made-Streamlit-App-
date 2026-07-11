@@ -18,7 +18,11 @@ def set_background(image_file):
         .stApp{{
            background-image:url("data:image/jpg;base64,{data}");
            background-size: cover;   
-           background-position: right bottom;
+           background-position: center;
+           background-attachment:fixed;
+        }}
+        .block-container{{
+           background-color: transparent;
         }}
         </style>
         """,
@@ -33,7 +37,7 @@ if os.path.exists("images/Arcane_Coundown_Kaba-2.jpg"):
 left, right = st.columns([1,2])
 
 with right:
-    st.title("🚀Arcane Countdown System")
+    st.title("🚀Arcane Coundown System")
     st.subheader("Synchronizing with July 16, 2026...")
     
     release_date = date(2026,7,16)
