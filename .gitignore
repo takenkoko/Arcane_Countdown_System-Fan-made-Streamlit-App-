@@ -2,6 +2,3 @@
 __pycache__/
 *.pyc
 
-#画像非公開
-images/*.jpg
-images/*.png
