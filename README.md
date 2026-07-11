@@ -9,10 +9,15 @@ a fan-made countdown web application built with Python and Streamlit.
 - Custom background support
 - Reset function
 
-## Technokogies
+## 🚀 Live Demo
+https://arcane-countdown-system.streamlit.app/
+
+
+## Tech Stack
 
 - Python 
 - Streamlit
+- GitHub
 
 # Author 
 Takenokoko
