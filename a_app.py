@@ -24,8 +24,8 @@ def set_background(image_file):
         """,
         unsafe_allow_html=True
     )
-if os.path.exists("images/Arcane_Coundown_kaba-2.jpg"):
-    set_background("images/Arcane_Coundown_kaba-2.jpg")
+if os.path.exists("images/Arcane_Coundown_Kaba-2.jpg"):
+    set_background("images/Arcane_Coundown_Kaba-2.jpg")
 
 #=============================
 #アプリのスタイル、見た目の設定
