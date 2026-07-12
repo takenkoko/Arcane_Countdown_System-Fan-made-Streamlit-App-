@@ -1,7 +1,9 @@
 import streamlit as st
 import base64
 from datetime import date
+from datetime import date
 import time
+import random
 import os
 
 
@@ -16,9 +18,10 @@ def set_background(image_file):
         f"""
         <style>
         .stApp{{
+           lonear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
            background-image:url("data:image/jpeg;base64,{data}");
-           background-size: cover;   
-           background-position: center;
+           background-size: cover ;   
+           background-position: left center;
            background-attachment:fixed;
         }}
         .block-container{{
@@ -28,8 +31,8 @@ def set_background(image_file):
         """,
         unsafe_allow_html=True
     )
-if os.path.exists("images/Arcane_Coundown_Kaba-2.jpg"):
-    set_background("images/Arcane_Coundown_Kaba-2.jpg")
+if os.path.exists("images/Arcane_Coundown_Kaba-3.jpg"):
+    set_background("images/Arcane_Coundown_Kaba-3.jpg")
 
 #=============================
 #アプリのスタイル、見た目の設定
@@ -37,6 +40,8 @@ if os.path.exists("images/Arcane_Coundown_Kaba-2.jpg"):
 left, right = st.columns([1,2])
 
 with right:
+    st.markdown("<br><br>", unsafe_allow_html=True)
+
     st.title("🚀Arcane Countdown System")
     st.subheader("Synchronizing with July 16, 2026...")
     
@@ -63,7 +68,43 @@ with right:
         #結果表示
         st.balloons()
         st.success(f"🎉Synchronized! {days_left} Days remaining until ARCANE!") 
+
+        # 日替わりメッセージを追加
+        messages=[
+            "Stay hydrated,Endmin🥤",
+            "May your pulls be blessed!",
+            "Another day closer to ARCANE!",
+            "Prepare youre squad!",
+            "Don't forget to take a break."
+            " The countdown continues!"
+        ]
         
+        daily_message = messages[date.today().toordinal() % len(messages)]
+
+        st.info(f"🗓️Daily Message\n\n{daily_message}")
+
+        luck_messages=[
+            ("★★★★★","Incredible Luck!","Today might be your day!"),
+            ("★★★★☆","Great Luck!","your chances look promising."),
+            ("★★★☆☆","Normal Luck","Anything can happen today."),
+            ("★★☆☆☆","Not Bad","Save some luck for tomorrow."),
+            ("★☆☆☆☆","uh-oh...","Maybe today isn't your day...😂")
+        ]
+
+        stars,title,messages = random.choice(luck_messages)
+
+        st.info(f"""
+                Today's Gacha Luck
+
+                {stars}
+
+                **{title}**
+
+                {messages}
+                
+                """)
+        st.caption("🎲Randomly generated for entertainment.")
+
         #==============
         #中央画像にする
         #==============
