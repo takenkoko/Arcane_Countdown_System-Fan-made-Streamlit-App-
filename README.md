@@ -1,13 +1,18 @@
 # Arcane Countdown System
 a fan-made countdown web application built with Python and Streamlit.
 
-## Features
+### Features
 
-- Countdown to July 16, 2026
-- Animated loading sequence
-- Celebration effects
-- Custom background support
-- Reset function
+- 🚀 Arcane Countdown System
+- ⏳ Countdown to July 16, 2026
+- 🔄 Real-time countdown display
+- 🎬 Animated loading sequence
+- 🎨 Custom background image support
+- 🌑 Dark overlay UI for better readability
+- 🖼️ Centered character/image display
+- ✨ Animated UI elements and interactive buttons
+- 🎆 Fireworks effect when countdown reaches the final day
+- 🔁 Reset function
 
 ## 🚀 Live Demo
 https://arcane-countdown-system.streamlit.app/
