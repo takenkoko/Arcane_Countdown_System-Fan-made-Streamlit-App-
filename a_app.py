@@ -111,7 +111,7 @@ with right:
         #==============
         #中央画像にする
         #==============
-        col1,col2,col3 = st.columns([1,2,1])
+        img_col1,col2,col3 = st.columns([1,2,1])
 
         with col2:
             if os.path.exists("images/IMG_7200.png"):
@@ -127,9 +127,15 @@ with right:
         
         if days_left <= 1:
             st.fireworks()#残り一日なら花火演出
-    
-        if st.button("EXIT"):
-            st.rerun()
+
+        #================
+        #EXITを中央に配置
+        #================
+        exit_col1,col2,col3 = st.columns([1,2,1])
+
+        with col2:
+            if st.button("EXIT",use_container_width=True):
+                st.rerun()
         
     st.markdown(
         """
