@@ -18,11 +18,13 @@ def set_background(image_file):
         f"""
         <style>
         .stApp{{
-           lonear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
            background-image:url("data:image/jpeg;base64,{data}");
-           background-size: cover ;   
-           background-position: left center;
+           linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+           
+           background-size: contain;   
+           background-position: center bottom;
            background-attachment:fixed;
+           background-repeat: no-repeat;
         }}
         .block-container{{
            background-color: transparent;
@@ -31,6 +33,7 @@ def set_background(image_file):
         """,
         unsafe_allow_html=True
     )
+
 if os.path.exists("images/Arcane_Coundown_Kaba-3.jpg"):
     set_background("images/Arcane_Coundown_Kaba-3.jpg")
 
