@@ -87,14 +87,14 @@ with right:
         st.info(f"🗓️Daily Message\n\n{daily_message}")
 
         luck_messages=[
-            ("★★★★★","Incredible Luck!","Today might be your day!"),
-            ("★★★★☆","Great Luck!","your chances look promising."),
-            ("★★★☆☆","Normal Luck","Anything can happen today."),
-            ("★★☆☆☆","Not Bad","Save some luck for tomorrow."),
-            ("★☆☆☆☆","uh-oh...","Maybe today isn't your day...😂")
+            ("★★★★★","Incredible Luck!","Today might be your day!","imges/08.png"),
+            ("★★★★☆","Great Luck!","your chances look promising.","images/03.png"),
+            ("★★★☆☆","Normal Luck","Anything can happen today.","images/07.png"),
+            ("★★☆☆☆","Not Bad","Save some luck for tomorrow.","images/06.png"),
+            ("★☆☆☆☆","uh-oh...","Maybe today isn't your day...😂","images/01.png")
         ]
 
-        stars,title,messages = random.choice(luck_messages)
+        stars,title,messages,image = random.choice(luck_messages)
 
         st.info(f"""
                 Today's Gacha Luck
@@ -106,16 +106,25 @@ with right:
                 {messages}
                 
                 """)
+        
+        image_col1,col2,col3 = st.columns([1,2,1])
+
+        with col2:
+            if os.path.exists(image):
+                st.image(image,width=300)
+            else:
+                st.error(f"画像ファイルがみつかりません：{image}")
+
         st.caption("🎲Randomly generated for entertainment.")
 
         #==============
         #中央画像にする
         #==============
-        img_col1,col2,col3 = st.columns([1,2,1])
+        #img_col1,col2,col3 = st.columns([1,2,1])
 
-        with col2:
-            if os.path.exists("images/IMG_7200.png"):
-                st.image("images/IMG_7200.png",width=300)
+        #with col2:
+        #    if os.path.exists("images/IMG_7200.png"):
+        #        st.image("images/IMG_7200.png",width=300)
 
         #HTML設定
         st.markdown(
