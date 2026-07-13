@@ -87,7 +87,7 @@ with right:
         st.info(f"🗓️Daily Message\n\n{daily_message}")
 
         luck_messages=[
-            ("★★★★★","Incredible Luck!","Today might be your day!","imges/08.png"),
+            ("★★★★★","Incredible Luck!","Today might be your day!","images/08.png"),
             ("★★★★☆","Great Luck!","your chances look promising.","images/03.png"),
             ("★★★☆☆","Normal Luck","Anything can happen today.","images/07.png"),
             ("★★☆☆☆","Not Bad","Save some luck for tomorrow.","images/06.png"),
