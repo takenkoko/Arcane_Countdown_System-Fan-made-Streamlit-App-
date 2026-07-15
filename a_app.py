@@ -78,7 +78,7 @@ with right:
             "May your pulls be blessed!",
             "Another day closer to ARCANE!",
             "Prepare youre squad!",
-            "Don't forget to take a break."
+            "Don't forget to take a break.",
             " The countdown continues!"
         ]
         
@@ -135,7 +135,7 @@ with right:
             """,unsafe_allow_html=True)
         
         if days_left <= 1:
-            st.fireworks()#残り一日なら花火演出
+            st.balloons()#残り一日なら花火演出
 
         #================
         #EXITを中央に配置
